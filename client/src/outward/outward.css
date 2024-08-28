@@ -1,0 +1,140 @@
+.container {
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    background-color: #bec7bf;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cylinder-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+  }
+  
+  .info {
+    margin: 10px 20px;
+    flex: 1 1 calc(25% - 40px); /* Each item takes up to 25% of the row */
+    text-align: center;
+  }
+  
+  .info label {
+    display: block;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+  }
+  
+  .info p,
+  .info input {
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: .8px;
+  }
+  
+  .info input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  button[type="button"],
+  button[type="submit"] {
+    padding: 10px 20px;
+    margin: 20px 10px;
+    background-color: #ffee00;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  button[type="button"]:hover,
+  button[type="submit"]:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+                rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  
+  .remarks-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  .remarks-popup h3 {
+    margin-bottom: 10px;
+  }
+  
+  .remarks-popup textarea {
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .remarks-popup button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #ffee00;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .close-popup{
+    background-color: rgb(255, 78, 78);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: none;
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); */
+  }
+
+  .close-popup:hover{
+    transform: scale(1.02);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  @media (max-width: 768px) {
+    .info {
+      flex: 1 1 100%; /* Stack all info items vertically */
+      margin: 10px 0;
+    }
+  
+    button[type="button"],
+    button[type="submit"] {
+      width: 100%; /* Buttons take up full width on smaller screens */
+      margin: 10px 0;
+    }
+  
+    .cylinder-row {
+      flex-direction: column; /* Stack rows vertically on small screens */
+    }
+  
+    .container {
+      padding: 15px;
+      max-width: 100%;
+    }
+  
+    .remarks-popup {
+      width: 90%; /* Adjust popup size on smaller screens */
+    }
+  }
+  

@@ -1,0 +1,50 @@
+.history-container {
+    padding: 20px;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .options button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #d6efd8;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .options button.active {
+    background-color: #a0d6a5;
+  }
+  
+  .options button:hover {
+    background-color: #c2f0c2;
+  }
+  
+  .data-display {
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
